@@ -366,7 +366,7 @@ class MemoryAllocation {
 			
 			System.out.println(Arrays.toString(memory));
 		} else {
-			out.println("Unsuccessful allocation attempt \tID: " + requests[i][0] + " Size: " + requests[i][1] + " units");
+			out.println("Unsuccessful allocation attempt \t\tID: " + requests[i][0] + " Size: " + requests[i][1] + " units");
 			
 			System.out.println(Arrays.toString(memory));
 		}
@@ -376,7 +376,7 @@ class MemoryAllocation {
 
 		Range<Integer, Integer> range = releaseMemory(requests[i][0], memory);
 
-		out.println("Released \t\t\t\t\t\t\tID: " + requests[i][0] + " Size: " + (range.getEnd() - range.getStart())
+		out.println("Released \t\t\t\t\tID: " + requests[i][0] + " Size: " + (range.getEnd() - range.getStart())
 				+ " units from " + range.getStart() + " to " + range.getEnd());
 
 		

@@ -1,0 +1,27 @@
+26
+allocate 1 25
+allocate 2 51
+release 1
+allocate 3 24
+allocate 4 13
+allocate 5 12
+release 5
+allocate 6 1
+allocate 7 11
+release 4
+release 7
+allocate 8 23
+release 3
+release 2
+release 6
+release 8
+allocate 9 30
+allocate 10 20
+release 9
+allocate 11 10
+allocate 13 40
+allocate 12 30
+release 10
+release 11
+release 12
+release 13

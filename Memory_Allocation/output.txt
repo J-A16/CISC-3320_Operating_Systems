@@ -1,0 +1,132 @@
+All range ends are exclusive
+
+Begin Best Fit Allocate Testing
+
+Successful allocation 				ID: 1 Size: 25 units from 0 to 25
+Successful allocation 				ID: 2 Size: 51 units from 25 to 76
+Released 					ID: 1 Size: 25 units from 0 to 25
+Successful allocation 				ID: 3 Size: 24 units from 76 to 100
+Successful allocation 				ID: 4 Size: 13 units from 0 to 13
+Successful allocation 				ID: 5 Size: 12 units from 13 to 25
+Released 					ID: 5 Size: 12 units from 13 to 25
+Successful allocation 				ID: 6 Size: 1 units from 13 to 14
+Successful allocation 				ID: 7 Size: 11 units from 14 to 25
+Released 					ID: 4 Size: 13 units from 0 to 13
+Released 					ID: 7 Size: 11 units from 14 to 25
+Unsuccessful allocation attempt 		ID: 8 Size: 23 units
+Released 					ID: 3 Size: 24 units from 76 to 100
+Released 					ID: 2 Size: 51 units from 25 to 76
+Released 					ID: 6 Size: 1 units from 13 to 14
+Released 					ID: 8 Size: 0 units from 0 to 0
+Successful allocation 				ID: 9 Size: 30 units from 0 to 30
+Successful allocation 				ID: 10 Size: 20 units from 30 to 50
+Released 					ID: 9 Size: 30 units from 0 to 30
+Successful allocation 				ID: 11 Size: 10 units from 0 to 10
+Successful allocation 				ID: 13 Size: 40 units from 50 to 90
+Unsuccessful allocation attempt 		ID: 12 Size: 30 units
+Released 					ID: 10 Size: 20 units from 30 to 50
+Released 					ID: 11 Size: 10 units from 0 to 10
+Released 					ID: 12 Size: 0 units from 0 to 0
+Released 					ID: 13 Size: 40 units from 50 to 90
+
+End Best Fit Allocate Testing
+
+
+
+Begin First Fit Allocate Testing
+
+Successful allocation 				ID: 1 Size: 25 units from 0 to 25
+Successful allocation 				ID: 2 Size: 51 units from 25 to 76
+Released 					ID: 1 Size: 25 units from 0 to 25
+Successful allocation 				ID: 3 Size: 24 units from 0 to 24
+Successful allocation 				ID: 4 Size: 13 units from 76 to 89
+Unsuccessful allocation attempt 		ID: 5 Size: 12 units
+Released 					ID: 5 Size: 0 units from 0 to 0
+Successful allocation 				ID: 6 Size: 1 units from 24 to 25
+Successful allocation 				ID: 7 Size: 11 units from 89 to 100
+Released 					ID: 4 Size: 13 units from 76 to 89
+Released 					ID: 7 Size: 11 units from 89 to 100
+Successful allocation 				ID: 8 Size: 23 units from 76 to 99
+Released 					ID: 3 Size: 24 units from 0 to 24
+Released 					ID: 2 Size: 51 units from 25 to 76
+Released 					ID: 6 Size: 1 units from 24 to 25
+Released 					ID: 8 Size: 23 units from 76 to 99
+Successful allocation 				ID: 9 Size: 30 units from 0 to 30
+Successful allocation 				ID: 10 Size: 20 units from 30 to 50
+Released 					ID: 9 Size: 30 units from 0 to 30
+Successful allocation 				ID: 11 Size: 10 units from 0 to 10
+Successful allocation 				ID: 13 Size: 40 units from 50 to 90
+Unsuccessful allocation attempt 		ID: 12 Size: 30 units
+Released 					ID: 10 Size: 20 units from 30 to 50
+Released 					ID: 11 Size: 10 units from 0 to 10
+Released 					ID: 12 Size: 0 units from 0 to 0
+Released 					ID: 13 Size: 40 units from 50 to 90
+
+End First Fit Allocate Testing
+
+
+
+Begin Worst Fit Allocate Testing
+
+Successful allocation 				ID: 1 Size: 25 units from 0 to 25
+Successful allocation 				ID: 2 Size: 51 units from 25 to 76
+Released 					ID: 1 Size: 25 units from 0 to 25
+Successful allocation 				ID: 3 Size: 24 units from 0 to 24
+Successful allocation 				ID: 4 Size: 13 units from 76 to 89
+Unsuccessful allocation attempt 		ID: 5 Size: 12 units
+Released 					ID: 5 Size: 0 units from 0 to 0
+Successful allocation 				ID: 6 Size: 1 units from 89 to 90
+Unsuccessful allocation attempt 		ID: 7 Size: 11 units
+Released 					ID: 4 Size: 13 units from 76 to 89
+Released 					ID: 7 Size: 0 units from 0 to 0
+Unsuccessful allocation attempt 		ID: 8 Size: 23 units
+Released 					ID: 3 Size: 24 units from 0 to 24
+Released 					ID: 2 Size: 51 units from 25 to 76
+Released 					ID: 6 Size: 1 units from 89 to 90
+Released 					ID: 8 Size: 0 units from 0 to 0
+Successful allocation 				ID: 9 Size: 30 units from 0 to 30
+Successful allocation 				ID: 10 Size: 20 units from 30 to 50
+Released 					ID: 9 Size: 30 units from 0 to 30
+Successful allocation 				ID: 11 Size: 10 units from 50 to 60
+Successful allocation 				ID: 13 Size: 40 units from 60 to 100
+Successful allocation 				ID: 12 Size: 30 units from 0 to 30
+Released 					ID: 10 Size: 20 units from 30 to 50
+Released 					ID: 11 Size: 10 units from 50 to 60
+Released 					ID: 12 Size: 30 units from 0 to 30
+Released 					ID: 13 Size: 40 units from 60 to 100
+
+End Worst Fit Allocate Testing
+
+
+
+Begin Next Fit Allocate Testing
+
+Successful allocation 				ID: 1 Size: 25 units from 0 to 25
+Successful allocation 				ID: 2 Size: 51 units from 25 to 76
+Released 					ID: 1 Size: 25 units from 0 to 25
+Successful allocation 				ID: 3 Size: 24 units from 76 to 100
+Successful allocation 				ID: 4 Size: 13 units from 0 to 13
+Successful allocation 				ID: 5 Size: 12 units from 13 to 25
+Released 					ID: 5 Size: 12 units from 13 to 25
+Unsuccessful allocation attempt 		ID: 6 Size: 1 units
+Unsuccessful allocation attempt 		ID: 7 Size: 11 units
+Released 					ID: 4 Size: 13 units from 0 to 13
+Released 					ID: 7 Size: 0 units from 0 to 0
+Unsuccessful allocation attempt 		ID: 8 Size: 23 units
+Released 					ID: 3 Size: 24 units from 76 to 100
+Released 					ID: 2 Size: 51 units from 25 to 76
+Released 					ID: 6 Size: 0 units from 0 to 0
+Released 					ID: 8 Size: 0 units from 0 to 0
+Successful allocation 				ID: 9 Size: 30 units from 25 to 55
+Successful allocation 				ID: 10 Size: 20 units from 55 to 75
+Released 					ID: 9 Size: 30 units from 25 to 55
+Successful allocation 				ID: 11 Size: 10 units from 75 to 85
+Successful allocation 				ID: 13 Size: 40 units from 0 to 40
+Unsuccessful allocation attempt 		ID: 12 Size: 30 units
+Released 					ID: 10 Size: 20 units from 55 to 75
+Released 					ID: 11 Size: 10 units from 75 to 85
+Released 					ID: 12 Size: 0 units from 0 to 0
+Released 					ID: 13 Size: 40 units from 0 to 40
+
+End Next Fit Allocate Testing
+
