@@ -61,7 +61,7 @@ class MemoryAllocation {
 		for (int i = 0; i < requests.length; ++i) {
 
 			if (allocate[i]) {
-				Range<Integer, Integer> range = bestFitAllocate(requests[i][0], requests[i][1], memory);
+				Range range = bestFitAllocate(requests[i][0], requests[i][1], memory);
 
 				printAllocationRange(out, i, range, requests, memory);
 
@@ -85,7 +85,7 @@ class MemoryAllocation {
 		for (int i = 0; i < requests.length; ++i) {
 
 			if (allocate[i]) {
-				Range<Integer, Integer> range = firstFitAllocate(requests[i][0], requests[i][1], memory);
+				Range range = firstFitAllocate(requests[i][0], requests[i][1], memory);
 
 				printAllocationRange(out, i, range, requests, memory);
 
@@ -109,7 +109,7 @@ class MemoryAllocation {
 		for (int i = 0; i < requests.length; ++i) {
 
 			if (allocate[i]) {
-				Range<Integer, Integer> range = worstFitAllocate(requests[i][0], requests[i][1], memory);
+				Range range = worstFitAllocate(requests[i][0], requests[i][1], memory);
 
 				printAllocationRange(out, i, range, requests, memory);
 
@@ -135,7 +135,7 @@ class MemoryAllocation {
 
 			if (allocate[i]) {
 
-				Range<Integer, Integer> range = nextFitAllocate(requests[i][0], requests[i][1], memory, startIndex);
+				Range range = nextFitAllocate(requests[i][0], requests[i][1], memory, startIndex);
 
 				printAllocationRange(out, i, range, requests, memory);
 
@@ -149,12 +149,12 @@ class MemoryAllocation {
 		out.println();
 	}
 
-	static Range<Integer, Integer> bestFitAllocate(int processId, int size, int[] memory) {
+	static Range bestFitAllocate(int processId, int size, int[] memory) {
 
 		boolean canFillRequest = false;
 		int freeBlockSize = 0;
 		int bestFit = memory.length;
-		Range<Integer, Integer> range = null;
+		Range range = null;
 
 		for (int i = 0; i < memory.length; ++i) {
 			if (memory[i] == 0) {
@@ -168,7 +168,7 @@ class MemoryAllocation {
 							bestFit = freeBlockSize;
 							int start = (i + 1) - freeBlockSize;
 							int end = start + size;
-							range = new Range<Integer, Integer>(start, end);
+							range = new Range(start, end);
 						}
 					}
 				}
@@ -179,7 +179,7 @@ class MemoryAllocation {
 						bestFit = freeBlockSize;
 						int start = i - freeBlockSize;
 						int end = start + size;
-						range = new Range<Integer, Integer>(start, end);
+						range = new Range(start, end);
 					}
 				}
 
@@ -199,11 +199,11 @@ class MemoryAllocation {
 		return range;
 	}
 
-	static Range<Integer, Integer> firstFitAllocate(int processId, int size, int[] memory) {
+	static Range firstFitAllocate(int processId, int size, int[] memory) {
 
 		boolean canFillRequest = false;
 		int freeBlockSize = 0;
-		Range<Integer, Integer> range = null;
+		Range range = null;
 
 		for (int i = 0; i < memory.length; ++i) {
 			if (memory[i] == 0) {
@@ -215,7 +215,7 @@ class MemoryAllocation {
 						canFillRequest = true;
 						int start = (i + 1) - freeBlockSize;
 						int end = start + size;
-						range = new Range<Integer, Integer>(start, end);
+						range = new Range(start, end);
 					}
 				}
 			} else {
@@ -223,7 +223,7 @@ class MemoryAllocation {
 					canFillRequest = true;
 					int start = i - freeBlockSize;
 					int end = start + size;
-					range = new Range<Integer, Integer>(start, end);
+					range = new Range(start, end);
 					break;
 				}
 
@@ -240,12 +240,12 @@ class MemoryAllocation {
 		return range;
 	}
 
-	static Range<Integer, Integer> worstFitAllocate(int processId, int size, int[] memory) {
+	static Range worstFitAllocate(int processId, int size, int[] memory) {
 
 		boolean canFillRequest = false;
 		int freeBlockSize = 0;
 		int worstFit = 0;
-		Range<Integer, Integer> range = null;
+		Range range = null;
 
 		for (int i = 0; i < memory.length; ++i) {
 			if (memory[i] == 0) {
@@ -258,7 +258,7 @@ class MemoryAllocation {
 						worstFit = freeBlockSize;
 						int start = (i + 1) - freeBlockSize;
 						int end = start + size;
-						range = new Range<Integer, Integer>(start, end);
+						range = new Range(start, end);
 					}
 				}
 			} else {
@@ -267,7 +267,7 @@ class MemoryAllocation {
 					worstFit = freeBlockSize;
 					int start = i - freeBlockSize;
 					int end = start + size;
-					range = new Range<Integer, Integer>(start, end);
+					range = new Range(start, end);
 				}
 
 				freeBlockSize = 0;
@@ -283,11 +283,11 @@ class MemoryAllocation {
 		return range;
 	}
 
-	static Range<Integer, Integer> nextFitAllocate(int processId, int size, int[] memory, IntReference startIndex) {
+	static Range nextFitAllocate(int processId, int size, int[] memory, IntReference startIndex) {
 
 		boolean canFillRequest = false;
 		int freeBlockSize = 0;
-		Range<Integer, Integer> range = null;
+		Range range = null;
 
 		for (int i = startIndex.getValue() % memory.length, j = 0; j < memory.length; ++i, i = i % memory.length, ++j) {
 			if (memory[i] == 0) {
@@ -299,7 +299,7 @@ class MemoryAllocation {
 						canFillRequest = true;
 						int start = (i + 1) - freeBlockSize;
 						int end = start + size;
-						range = new Range<Integer, Integer>(start, end);
+						range = new Range(start, end);
 						startIndex.setValue(end);
 						break;
 					}
@@ -311,7 +311,7 @@ class MemoryAllocation {
 					canFillRequest = true;
 					int start = i - freeBlockSize;
 					int end = start + size;
-					range = new Range<Integer, Integer>(start, end);
+					range = new Range(start, end);
 					startIndex.setValue(end);
 					break;
 				}
@@ -329,7 +329,7 @@ class MemoryAllocation {
 		return range;
 	}
 
-	static Range<Integer, Integer> releaseMemory(int processId, int[] memory) {
+	static Range releaseMemory(int processId, int[] memory) {
 
 		boolean startRecorded = false;
 		int start = 0, end = 0;
@@ -354,10 +354,10 @@ class MemoryAllocation {
 			}
 		}
 
-		return new Range<Integer, Integer>(start, end);
+		return new Range(start, end);
 	}
 
-	static void printAllocationRange(PrintWriter out, int i, Range<Integer, Integer> range, int[][] requests,
+	static void printAllocationRange(PrintWriter out, int i, Range range, int[][] requests,
 			int[] memory) {
 
 		if (range != null) {
@@ -374,7 +374,7 @@ class MemoryAllocation {
 
 	static void releaseAndPrintRangeReleased(PrintWriter out, int i, int[][] requests, int[] memory) {
 
-		Range<Integer, Integer> range = releaseMemory(requests[i][0], memory);
+		Range range = releaseMemory(requests[i][0], memory);
 
 		out.println("Released \t\t\t\t\tID: " + requests[i][0] + " Size: " + (range.getEnd() - range.getStart())
 				+ " units from " + range.getStart() + " to " + range.getEnd());
@@ -384,20 +384,20 @@ class MemoryAllocation {
 	}
 }
 
-class Range<A, B> {
-	private A start;
-	private B end;
+class Range {
+	private int start;
+	private int end;
 
-	public Range(A start, B end) {
+	public Range(int start, int end) {
 		this.start = start;
 		this.end = end;
 	}
 
-	public A getStart() {
+	public int getStart() {
 		return start;
 	}
 
-	public B getEnd() {
+	public int getEnd() {
 		return end;
 	}
 }
