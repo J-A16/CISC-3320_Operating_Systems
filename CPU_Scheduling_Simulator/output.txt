@@ -1,0 +1,466 @@
+{processID = 1; processPriority = 2; arrivalTimeStamp = 24; totalBurstTime = 30;}
+{processID = 2; processPriority = 1; arrivalTimeStamp = 53; totalBurstTime = 14;}
+{processID = 3; processPriority = 3; arrivalTimeStamp = 93; totalBurstTime = 17;}
+{processID = 4; processPriority = 2; arrivalTimeStamp = 98; totalBurstTime = 2;}
+{processID = 5; processPriority = 1; arrivalTimeStamp = 103; totalBurstTime = 16;}
+{processID = 6; processPriority = 1; arrivalTimeStamp = 104; totalBurstTime = 13;}
+{processID = 7; processPriority = 2; arrivalTimeStamp = 165; totalBurstTime = 49;}
+{processID = 8; processPriority = 1; arrivalTimeStamp = 193; totalBurstTime = 49;}
+{processID = 9; processPriority = 2; arrivalTimeStamp = 219; totalBurstTime = 21;}
+{processID = 10; processPriority = 2; arrivalTimeStamp = 234; totalBurstTime = 12;}
+{processID = 11; processPriority = 3; arrivalTimeStamp = 259; totalBurstTime = 22;}
+{processID = 12; processPriority = 2; arrivalTimeStamp = 301; totalBurstTime = 34;}
+{processID = 13; processPriority = 2; arrivalTimeStamp = 312; totalBurstTime = 49;}
+{processID = 14; processPriority = 2; arrivalTimeStamp = 313; totalBurstTime = 50;}
+{processID = 15; processPriority = 3; arrivalTimeStamp = 325; totalBurstTime = 13;}
+{processID = 16; processPriority = 3; arrivalTimeStamp = 337; totalBurstTime = 6;}
+{processID = 17; processPriority = 2; arrivalTimeStamp = 340; totalBurstTime = 40;}
+{processID = 18; processPriority = 3; arrivalTimeStamp = 349; totalBurstTime = 33;}
+{processID = 19; processPriority = 3; arrivalTimeStamp = 361; totalBurstTime = 39;}
+{processID = 20; processPriority = 1; arrivalTimeStamp = 401; totalBurstTime = 13;}
+{processID = 21; processPriority = 3; arrivalTimeStamp = 403; totalBurstTime = 12;}
+{processID = 22; processPriority = 2; arrivalTimeStamp = 431; totalBurstTime = 10;}
+{processID = 23; processPriority = 1; arrivalTimeStamp = 436; totalBurstTime = 30;}
+{processID = 24; processPriority = 3; arrivalTimeStamp = 437; totalBurstTime = 32;}
+{processID = 25; processPriority = 3; arrivalTimeStamp = 451; totalBurstTime = 22;}
+{processID = 26; processPriority = 1; arrivalTimeStamp = 472; totalBurstTime = 30;}
+{processID = 27; processPriority = 2; arrivalTimeStamp = 486; totalBurstTime = 32;}
+{processID = 28; processPriority = 2; arrivalTimeStamp = 498; totalBurstTime = 18;}
+{processID = 29; processPriority = 1; arrivalTimeStamp = 520; totalBurstTime = 15;}
+{processID = 30; processPriority = 2; arrivalTimeStamp = 559; totalBurstTime = 19;}
+{processID = 31; processPriority = 1; arrivalTimeStamp = 563; totalBurstTime = 32;}
+{processID = 32; processPriority = 2; arrivalTimeStamp = 595; totalBurstTime = 11;}
+{processID = 33; processPriority = 3; arrivalTimeStamp = 603; totalBurstTime = 9;}
+{processID = 34; processPriority = 2; arrivalTimeStamp = 655; totalBurstTime = 15;}
+{processID = 35; processPriority = 2; arrivalTimeStamp = 662; totalBurstTime = 18;}
+{processID = 36; processPriority = 1; arrivalTimeStamp = 669; totalBurstTime = 10;}
+{processID = 37; processPriority = 3; arrivalTimeStamp = 692; totalBurstTime = 34;}
+{processID = 38; processPriority = 2; arrivalTimeStamp = 742; totalBurstTime = 42;}
+{processID = 39; processPriority = 1; arrivalTimeStamp = 745; totalBurstTime = 33;}
+{processID = 40; processPriority = 2; arrivalTimeStamp = 764; totalBurstTime = 26;}
+{processID = 41; processPriority = 3; arrivalTimeStamp = 810; totalBurstTime = 50;}
+{processID = 42; processPriority = 1; arrivalTimeStamp = 825; totalBurstTime = 24;}
+{processID = 43; processPriority = 2; arrivalTimeStamp = 841; totalBurstTime = 19;}
+{processID = 44; processPriority = 1; arrivalTimeStamp = 884; totalBurstTime = 34;}
+{processID = 45; processPriority = 2; arrivalTimeStamp = 922; totalBurstTime = 25;}
+{processID = 46; processPriority = 1; arrivalTimeStamp = 928; totalBurstTime = 30;}
+{processID = 47; processPriority = 1; arrivalTimeStamp = 963; totalBurstTime = 43;}
+{processID = 48; processPriority = 3; arrivalTimeStamp = 965; totalBurstTime = 32;}
+{processID = 49; processPriority = 3; arrivalTimeStamp = 969; totalBurstTime = 23;}
+{processID = 50; processPriority = 1; arrivalTimeStamp = 977; totalBurstTime = 3;}
+
+Beginning Priority-Based Preemptive Scheduling Simulation
+
+Time: 24  Process 1 with priority 2 has arrived.
+Time: 53 Current process 1 priority: 2  Arriving process 2 priority: 1 Context switch, adding current process to ready queue.
+Time: 67 Ending process 2 Starting process 1
+Time: 68 Ending process 1
+Time: 93  Process 3 with priority 3 has arrived.
+Time: 98 Current process 3 priority: 3  Arriving process 4 priority: 2 Context switch, adding current process to ready queue.
+Time: 100 Ending process 4 Starting process 3
+Time: 103 Current process 3 priority: 3  Arriving process 5 priority: 1 Context switch, adding current process to ready queue.
+Time: 104 Current process 5 priority: 1  Arriving process 6 priority: 1 Adding arriving to ready queue.
+Time: 119 Ending process 5 Starting process 6
+Time: 132 Ending process 6 Starting process 3
+Time: 141 Ending process 3
+Time: 165  Process 7 with priority 2 has arrived.
+Time: 193 Current process 7 priority: 2  Arriving process 8 priority: 1 Context switch, adding current process to ready queue.
+Time: 219 Current process 8 priority: 1  Arriving process 9 priority: 2 Adding arriving to ready queue.
+Time: 234 Current process 8 priority: 1  Arriving process 10 priority: 2 Adding arriving to ready queue.
+Time: 242 Ending process 8 Starting process 7
+Time: 259 Current process 7 priority: 2  Arriving process 11 priority: 3 Adding arriving to ready queue.
+Time: 263 Ending process 7 Starting process 10
+Time: 275 Ending process 10 Starting process 9
+Time: 296 Ending process 9 Starting process 11
+Time: 301 Current process 11 priority: 3  Arriving process 12 priority: 2 Context switch, adding current process to ready queue.
+Time: 312 Current process 12 priority: 2  Arriving process 13 priority: 2 Adding arriving to ready queue.
+Time: 313 Current process 12 priority: 2  Arriving process 14 priority: 2 Adding arriving to ready queue.
+Time: 325 Current process 12 priority: 2  Arriving process 15 priority: 3 Adding arriving to ready queue.
+Time: 335 Ending process 12 Starting process 13
+Time: 337 Current process 13 priority: 2  Arriving process 16 priority: 3 Adding arriving to ready queue.
+Time: 340 Current process 13 priority: 2  Arriving process 17 priority: 2 Adding arriving to ready queue.
+Time: 349 Current process 13 priority: 2  Arriving process 18 priority: 3 Adding arriving to ready queue.
+Time: 361 Current process 13 priority: 2  Arriving process 19 priority: 3 Adding arriving to ready queue.
+Time: 384 Ending process 13 Starting process 14
+Time: 401 Current process 14 priority: 2  Arriving process 20 priority: 1 Context switch, adding current process to ready queue.
+Time: 403 Current process 20 priority: 1  Arriving process 21 priority: 3 Adding arriving to ready queue.
+Time: 414 Ending process 20 Starting process 17
+Time: 431 Current process 17 priority: 2  Arriving process 22 priority: 2 Adding arriving to ready queue.
+Time: 436 Current process 17 priority: 2  Arriving process 23 priority: 1 Context switch, adding current process to ready queue.
+Time: 437 Current process 23 priority: 1  Arriving process 24 priority: 3 Adding arriving to ready queue.
+Time: 451 Current process 23 priority: 1  Arriving process 25 priority: 3 Adding arriving to ready queue.
+Time: 466 Ending process 23 Starting process 14
+Time: 472 Current process 14 priority: 2  Arriving process 26 priority: 1 Context switch, adding current process to ready queue.
+Time: 486 Current process 26 priority: 1  Arriving process 27 priority: 2 Adding arriving to ready queue.
+Time: 498 Current process 26 priority: 1  Arriving process 28 priority: 2 Adding arriving to ready queue.
+Time: 502 Ending process 26 Starting process 22
+Time: 512 Ending process 22 Starting process 17
+Time: 520 Current process 17 priority: 2  Arriving process 29 priority: 1 Context switch, adding current process to ready queue.
+Time: 535 Ending process 29 Starting process 14
+Time: 559 Current process 14 priority: 2  Arriving process 30 priority: 2 Adding arriving to ready queue.
+Time: 562 Ending process 14 Starting process 17
+Time: 563 Current process 17 priority: 2  Arriving process 31 priority: 1 Context switch, adding current process to ready queue.
+Time: 595 Ending process 31 Starting process 30
+Time: 595 Current process 30 priority: 2  Arriving process 32 priority: 2 Adding arriving to ready queue.
+Time: 603 Current process 30 priority: 2  Arriving process 33 priority: 3 Adding arriving to ready queue.
+Time: 614 Ending process 30 Starting process 17
+Time: 623 Ending process 17 Starting process 27
+Time: 655 Ending process 27 Starting process 28
+Time: 655 Current process 28 priority: 2  Arriving process 34 priority: 2 Adding arriving to ready queue.
+Time: 662 Current process 28 priority: 2  Arriving process 35 priority: 2 Adding arriving to ready queue.
+Time: 669 Current process 28 priority: 2  Arriving process 36 priority: 1 Context switch, adding current process to ready queue.
+Time: 679 Ending process 36 Starting process 32
+Time: 690 Ending process 32 Starting process 34
+Time: 692 Current process 34 priority: 2  Arriving process 37 priority: 3 Adding arriving to ready queue.
+Time: 705 Ending process 34 Starting process 35
+Time: 723 Ending process 35 Starting process 28
+Time: 727 Ending process 28 Starting process 21
+Time: 739 Ending process 21 Starting process 24
+Time: 742 Current process 24 priority: 3  Arriving process 38 priority: 2 Context switch, adding current process to ready queue.
+Time: 745 Current process 38 priority: 2  Arriving process 39 priority: 1 Context switch, adding current process to ready queue.
+Time: 764 Current process 39 priority: 1  Arriving process 40 priority: 2 Adding arriving to ready queue.
+Time: 778 Ending process 39 Starting process 38
+Time: 810 Current process 38 priority: 2  Arriving process 41 priority: 3 Adding arriving to ready queue.
+Time: 817 Ending process 38 Starting process 40
+Time: 825 Current process 40 priority: 2  Arriving process 42 priority: 1 Context switch, adding current process to ready queue.
+Time: 841 Current process 42 priority: 1  Arriving process 43 priority: 2 Adding arriving to ready queue.
+Time: 849 Ending process 42 Starting process 40
+Time: 867 Ending process 40 Starting process 43
+Time: 884 Current process 43 priority: 2  Arriving process 44 priority: 1 Context switch, adding current process to ready queue.
+Time: 918 Ending process 44 Starting process 43
+Time: 920 Ending process 43 Starting process 11
+Time: 922 Current process 11 priority: 3  Arriving process 45 priority: 2 Context switch, adding current process to ready queue.
+Time: 928 Current process 45 priority: 2  Arriving process 46 priority: 1 Context switch, adding current process to ready queue.
+Time: 958 Ending process 46 Starting process 45
+Time: 963 Current process 45 priority: 2  Arriving process 47 priority: 1 Context switch, adding current process to ready queue.
+Time: 965 Current process 47 priority: 1  Arriving process 48 priority: 3 Adding arriving to ready queue.
+Time: 969 Current process 47 priority: 1  Arriving process 49 priority: 3 Adding arriving to ready queue.
+Time: 977 Current process 47 priority: 1  Arriving process 50 priority: 1 Adding arriving to ready queue.
+Time: 1006 Ending process 47 Starting process 50
+Time: 1009 Ending process 50 Starting process 45
+Time: 1023 Ending process 45 Starting process 49
+Time: 1046 Ending process 49 Starting process 48
+Time: 1078 Ending process 48 Starting process 19
+Time: 1117 Ending process 19 Starting process 11
+Time: 1132 Ending process 11 Starting process 24
+Time: 1161 Ending process 24 Starting process 16
+Time: 1167 Ending process 16 Starting process 33
+Time: 1176 Ending process 33 Starting process 37
+Time: 1210 Ending process 37 Starting process 18
+Time: 1243 Ending process 18 Starting process 25
+Time: 1265 Ending process 25 Starting process 15
+Time: 1278 Ending process 15 Starting process 41
+Time: 1328 Ending process 41
+
+Priority-Based Preemptive Scheduling Simulation complete
+
+
+Beginning Shortest Remaining Time Next Preemptive Scheduling Simulation
+
+Time: 24  Process 1 with total burst time 30 has arrived.
+Time: 53 Current process 1 Remaining Burst Time: 1  Arriving process 2 Total Burst Time: 14 Adding arriving to ready queue.
+Time: 54 Ending process 1 Starting process 2
+Time: 68 Ending process 2
+Time: 93  Process 3 with total burst time 17 has arrived.
+Time: 98 Current process 3 Remaining Burst Time: 12  Arriving process 4 Total Burst Time: 2 Context switch, adding current process to ready queue.
+Time: 100 Ending process 4 Starting process 3
+Time: 103 Current process 3 Remaining Burst Time: 9  Arriving process 5 Total Burst Time: 16 Adding arriving to ready queue.
+Time: 104 Current process 3 Remaining Burst Time: 8  Arriving process 6 Total Burst Time: 13 Adding arriving to ready queue.
+Time: 112 Ending process 3 Starting process 6
+Time: 125 Ending process 6 Starting process 5
+Time: 141 Ending process 5
+Time: 165  Process 7 with total burst time 49 has arrived.
+Time: 193 Current process 7 Remaining Burst Time: 21  Arriving process 8 Total Burst Time: 49 Adding arriving to ready queue.
+Time: 214 Ending process 7 Starting process 8
+Time: 219 Current process 8 Remaining Burst Time: 44  Arriving process 9 Total Burst Time: 21 Context switch, adding current process to ready queue.
+Time: 234 Current process 9 Remaining Burst Time: 6  Arriving process 10 Total Burst Time: 12 Adding arriving to ready queue.
+Time: 240 Ending process 9 Starting process 10
+Time: 252 Ending process 10 Starting process 8
+Time: 259 Current process 8 Remaining Burst Time: 37  Arriving process 11 Total Burst Time: 22 Context switch, adding current process to ready queue.
+Time: 281 Ending process 11 Starting process 8
+Time: 301 Current process 8 Remaining Burst Time: 17  Arriving process 12 Total Burst Time: 34 Adding arriving to ready queue.
+Time: 312 Current process 8 Remaining Burst Time: 6  Arriving process 13 Total Burst Time: 49 Adding arriving to ready queue.
+Time: 313 Current process 8 Remaining Burst Time: 5  Arriving process 14 Total Burst Time: 50 Adding arriving to ready queue.
+Time: 318 Ending process 8 Starting process 12
+Time: 325 Current process 12 Remaining Burst Time: 27  Arriving process 15 Total Burst Time: 13 Context switch, adding current process to ready queue.
+Time: 337 Current process 15 Remaining Burst Time: 1  Arriving process 16 Total Burst Time: 6 Adding arriving to ready queue.
+Time: 338 Ending process 15 Starting process 16
+Time: 340 Current process 16 Remaining Burst Time: 4  Arriving process 17 Total Burst Time: 40 Adding arriving to ready queue.
+Time: 344 Ending process 16 Starting process 12
+Time: 349 Current process 12 Remaining Burst Time: 22  Arriving process 18 Total Burst Time: 33 Adding arriving to ready queue.
+Time: 361 Current process 12 Remaining Burst Time: 10  Arriving process 19 Total Burst Time: 39 Adding arriving to ready queue.
+Time: 371 Ending process 12 Starting process 18
+Time: 401 Current process 18 Remaining Burst Time: 3  Arriving process 20 Total Burst Time: 13 Adding arriving to ready queue.
+Time: 403 Current process 18 Remaining Burst Time: 1  Arriving process 21 Total Burst Time: 12 Adding arriving to ready queue.
+Time: 404 Ending process 18 Starting process 21
+Time: 416 Ending process 21 Starting process 20
+Time: 429 Ending process 20 Starting process 19
+Time: 431 Current process 19 Remaining Burst Time: 37  Arriving process 22 Total Burst Time: 10 Context switch, adding current process to ready queue.
+Time: 436 Current process 22 Remaining Burst Time: 5  Arriving process 23 Total Burst Time: 30 Adding arriving to ready queue.
+Time: 437 Current process 22 Remaining Burst Time: 4  Arriving process 24 Total Burst Time: 32 Adding arriving to ready queue.
+Time: 441 Ending process 22 Starting process 23
+Time: 451 Current process 23 Remaining Burst Time: 20  Arriving process 25 Total Burst Time: 22 Adding arriving to ready queue.
+Time: 471 Ending process 23 Starting process 25
+Time: 472 Current process 25 Remaining Burst Time: 21  Arriving process 26 Total Burst Time: 30 Adding arriving to ready queue.
+Time: 486 Current process 25 Remaining Burst Time: 7  Arriving process 27 Total Burst Time: 32 Adding arriving to ready queue.
+Time: 493 Ending process 25 Starting process 26
+Time: 498 Current process 26 Remaining Burst Time: 25  Arriving process 28 Total Burst Time: 18 Context switch, adding current process to ready queue.
+Time: 516 Ending process 28 Starting process 26
+Time: 520 Current process 26 Remaining Burst Time: 21  Arriving process 29 Total Burst Time: 15 Context switch, adding current process to ready queue.
+Time: 535 Ending process 29 Starting process 26
+Time: 556 Ending process 26 Starting process 27
+Time: 559 Current process 27 Remaining Burst Time: 29  Arriving process 30 Total Burst Time: 19 Context switch, adding current process to ready queue.
+Time: 563 Current process 30 Remaining Burst Time: 15  Arriving process 31 Total Burst Time: 32 Adding arriving to ready queue.
+Time: 578 Ending process 30 Starting process 27
+Time: 595 Current process 27 Remaining Burst Time: 12  Arriving process 32 Total Burst Time: 11 Context switch, adding current process to ready queue.
+Time: 603 Current process 32 Remaining Burst Time: 3  Arriving process 33 Total Burst Time: 9 Adding arriving to ready queue.
+Time: 606 Ending process 32 Starting process 33
+Time: 615 Ending process 33 Starting process 27
+Time: 627 Ending process 27 Starting process 24
+Time: 655 Current process 24 Remaining Burst Time: 4  Arriving process 34 Total Burst Time: 15 Adding arriving to ready queue.
+Time: 659 Ending process 24 Starting process 34
+Time: 662 Current process 34 Remaining Burst Time: 12  Arriving process 35 Total Burst Time: 18 Adding arriving to ready queue.
+Time: 669 Current process 34 Remaining Burst Time: 5  Arriving process 36 Total Burst Time: 10 Adding arriving to ready queue.
+Time: 674 Ending process 34 Starting process 36
+Time: 684 Ending process 36 Starting process 35
+Time: 692 Current process 35 Remaining Burst Time: 10  Arriving process 37 Total Burst Time: 34 Adding arriving to ready queue.
+Time: 702 Ending process 35 Starting process 31
+Time: 734 Ending process 31 Starting process 37
+Time: 742 Current process 37 Remaining Burst Time: 26  Arriving process 38 Total Burst Time: 42 Adding arriving to ready queue.
+Time: 745 Current process 37 Remaining Burst Time: 23  Arriving process 39 Total Burst Time: 33 Adding arriving to ready queue.
+Time: 764 Current process 37 Remaining Burst Time: 4  Arriving process 40 Total Burst Time: 26 Adding arriving to ready queue.
+Time: 768 Ending process 37 Starting process 40
+Time: 794 Ending process 40 Starting process 39
+Time: 810 Current process 39 Remaining Burst Time: 17  Arriving process 41 Total Burst Time: 50 Adding arriving to ready queue.
+Time: 825 Current process 39 Remaining Burst Time: 2  Arriving process 42 Total Burst Time: 24 Adding arriving to ready queue.
+Time: 827 Ending process 39 Starting process 42
+Time: 841 Current process 42 Remaining Burst Time: 10  Arriving process 43 Total Burst Time: 19 Adding arriving to ready queue.
+Time: 851 Ending process 42 Starting process 43
+Time: 870 Ending process 43 Starting process 19
+Time: 884 Current process 19 Remaining Burst Time: 23  Arriving process 44 Total Burst Time: 34 Adding arriving to ready queue.
+Time: 907 Ending process 19 Starting process 44
+Time: 922 Current process 44 Remaining Burst Time: 19  Arriving process 45 Total Burst Time: 25 Adding arriving to ready queue.
+Time: 928 Current process 44 Remaining Burst Time: 13  Arriving process 46 Total Burst Time: 30 Adding arriving to ready queue.
+Time: 941 Ending process 44 Starting process 45
+Time: 963 Current process 45 Remaining Burst Time: 3  Arriving process 47 Total Burst Time: 43 Adding arriving to ready queue.
+Time: 965 Current process 45 Remaining Burst Time: 1  Arriving process 48 Total Burst Time: 32 Adding arriving to ready queue.
+Time: 966 Ending process 45 Starting process 46
+Time: 969 Current process 46 Remaining Burst Time: 27  Arriving process 49 Total Burst Time: 23 Context switch, adding current process to ready queue.
+Time: 977 Current process 49 Remaining Burst Time: 15  Arriving process 50 Total Burst Time: 3 Context switch, adding current process to ready queue.
+Time: 980 Ending process 50 Starting process 49
+Time: 995 Ending process 49 Starting process 46
+Time: 1022 Ending process 46 Starting process 48
+Time: 1054 Ending process 48 Starting process 17
+Time: 1094 Ending process 17 Starting process 38
+Time: 1136 Ending process 38 Starting process 47
+Time: 1179 Ending process 47 Starting process 13
+Time: 1228 Ending process 13 Starting process 41
+Time: 1278 Ending process 41 Starting process 14
+Time: 1328 Ending process 14
+
+Shortest Remaining Time Next Preemptive Scheduling Simulation complete
+
+
+Beginning Round Robin Scheduling Simulation
+
+Time: 24  Process 1 has arrived.
+Time: 34 End of time quantum, queue is empty. Current process 1 continues
+Time: 44 End of time quantum, queue is empty. Current process 1 continues
+Time: 53  Process 2 has arrived, adding to ready queue.
+Time: 54 Ending process 1 Starting process 2
+Time: 64 End of time quantum, queue is empty. Current process 2 continues
+Time: 68 Ending process 2
+Time: 93  Process 3 has arrived.
+Time: 98  Process 4 has arrived, adding to ready queue.
+Time: 103 End of time quantum, context switch. Current process 3 added to queue, next process 4 taken off queue
+Time: 103  Process 5 has arrived, adding to ready queue.
+Time: 104  Process 6 has arrived, adding to ready queue.
+Time: 105 Ending process 4 Starting process 3
+Time: 112 Ending process 3 Starting process 5
+Time: 122 End of time quantum, context switch. Current process 5 added to queue, next process 6 taken off queue
+Time: 132 End of time quantum, context switch. Current process 6 added to queue, next process 5 taken off queue
+Time: 138 Ending process 5 Starting process 6
+Time: 141 Ending process 6
+Time: 165  Process 7 has arrived.
+Time: 175 End of time quantum, queue is empty. Current process 7 continues
+Time: 185 End of time quantum, queue is empty. Current process 7 continues
+Time: 193  Process 8 has arrived, adding to ready queue.
+Time: 195 End of time quantum, context switch. Current process 7 added to queue, next process 8 taken off queue
+Time: 205 End of time quantum, context switch. Current process 8 added to queue, next process 7 taken off queue
+Time: 215 End of time quantum, context switch. Current process 7 added to queue, next process 8 taken off queue
+Time: 219  Process 9 has arrived, adding to ready queue.
+Time: 225 End of time quantum, context switch. Current process 8 added to queue, next process 7 taken off queue
+Time: 234 Ending process 7 Starting process 9
+Time: 234  Process 10 has arrived, adding to ready queue.
+Time: 244 End of time quantum, context switch. Current process 9 added to queue, next process 8 taken off queue
+Time: 254 End of time quantum, context switch. Current process 8 added to queue, next process 10 taken off queue
+Time: 259  Process 11 has arrived, adding to ready queue.
+Time: 264 End of time quantum, context switch. Current process 10 added to queue, next process 9 taken off queue
+Time: 274 End of time quantum, context switch. Current process 9 added to queue, next process 8 taken off queue
+Time: 284 End of time quantum, context switch. Current process 8 added to queue, next process 11 taken off queue
+Time: 294 End of time quantum, context switch. Current process 11 added to queue, next process 10 taken off queue
+Time: 296 Ending process 10 Starting process 9
+Time: 297 Ending process 9 Starting process 8
+Time: 301  Process 12 has arrived, adding to ready queue.
+Time: 306 Ending process 8 Starting process 11
+Time: 312  Process 13 has arrived, adding to ready queue.
+Time: 313  Process 14 has arrived, adding to ready queue.
+Time: 316 End of time quantum, context switch. Current process 11 added to queue, next process 12 taken off queue
+Time: 325  Process 15 has arrived, adding to ready queue.
+Time: 326 End of time quantum, context switch. Current process 12 added to queue, next process 13 taken off queue
+Time: 336 End of time quantum, context switch. Current process 13 added to queue, next process 14 taken off queue
+Time: 337  Process 16 has arrived, adding to ready queue.
+Time: 340  Process 17 has arrived, adding to ready queue.
+Time: 346 End of time quantum, context switch. Current process 14 added to queue, next process 11 taken off queue
+Time: 348 Ending process 11 Starting process 15
+Time: 349  Process 18 has arrived, adding to ready queue.
+Time: 358 End of time quantum, context switch. Current process 15 added to queue, next process 12 taken off queue
+Time: 361  Process 19 has arrived, adding to ready queue.
+Time: 368 End of time quantum, context switch. Current process 12 added to queue, next process 13 taken off queue
+Time: 378 End of time quantum, context switch. Current process 13 added to queue, next process 16 taken off queue
+Time: 384 Ending process 16 Starting process 17
+Time: 394 End of time quantum, context switch. Current process 17 added to queue, next process 14 taken off queue
+Time: 401  Process 20 has arrived, adding to ready queue.
+Time: 403  Process 21 has arrived, adding to ready queue.
+Time: 404 End of time quantum, context switch. Current process 14 added to queue, next process 18 taken off queue
+Time: 414 End of time quantum, context switch. Current process 18 added to queue, next process 15 taken off queue
+Time: 417 Ending process 15 Starting process 19
+Time: 427 End of time quantum, context switch. Current process 19 added to queue, next process 12 taken off queue
+Time: 431  Process 22 has arrived, adding to ready queue.
+Time: 436  Process 23 has arrived, adding to ready queue.
+Time: 437 End of time quantum, context switch. Current process 12 added to queue, next process 13 taken off queue
+Time: 437  Process 24 has arrived, adding to ready queue.
+Time: 447 End of time quantum, context switch. Current process 13 added to queue, next process 17 taken off queue
+Time: 451  Process 25 has arrived, adding to ready queue.
+Time: 457 End of time quantum, context switch. Current process 17 added to queue, next process 20 taken off queue
+Time: 467 End of time quantum, context switch. Current process 20 added to queue, next process 21 taken off queue
+Time: 472  Process 26 has arrived, adding to ready queue.
+Time: 477 End of time quantum, context switch. Current process 21 added to queue, next process 14 taken off queue
+Time: 486  Process 27 has arrived, adding to ready queue.
+Time: 487 End of time quantum, context switch. Current process 14 added to queue, next process 18 taken off queue
+Time: 497 End of time quantum, context switch. Current process 18 added to queue, next process 19 taken off queue
+Time: 498  Process 28 has arrived, adding to ready queue.
+Time: 507 End of time quantum, context switch. Current process 19 added to queue, next process 22 taken off queue
+Time: 517 Ending process 22 Starting process 23
+Time: 520  Process 29 has arrived, adding to ready queue.
+Time: 527 End of time quantum, context switch. Current process 23 added to queue, next process 12 taken off queue
+Time: 531 Ending process 12 Starting process 24
+Time: 541 End of time quantum, context switch. Current process 24 added to queue, next process 13 taken off queue
+Time: 551 End of time quantum, context switch. Current process 13 added to queue, next process 25 taken off queue
+Time: 559  Process 30 has arrived, adding to ready queue.
+Time: 561 End of time quantum, context switch. Current process 25 added to queue, next process 17 taken off queue
+Time: 563  Process 31 has arrived, adding to ready queue.
+Time: 571 End of time quantum, context switch. Current process 17 added to queue, next process 20 taken off queue
+Time: 574 Ending process 20 Starting process 26
+Time: 584 End of time quantum, context switch. Current process 26 added to queue, next process 21 taken off queue
+Time: 586 Ending process 21 Starting process 27
+Time: 595  Process 32 has arrived, adding to ready queue.
+Time: 596 End of time quantum, context switch. Current process 27 added to queue, next process 14 taken off queue
+Time: 603  Process 33 has arrived, adding to ready queue.
+Time: 606 End of time quantum, context switch. Current process 14 added to queue, next process 18 taken off queue
+Time: 616 End of time quantum, context switch. Current process 18 added to queue, next process 28 taken off queue
+Time: 626 End of time quantum, context switch. Current process 28 added to queue, next process 19 taken off queue
+Time: 636 End of time quantum, context switch. Current process 19 added to queue, next process 29 taken off queue
+Time: 646 End of time quantum, context switch. Current process 29 added to queue, next process 23 taken off queue
+Time: 655  Process 34 has arrived, adding to ready queue.
+Time: 656 End of time quantum, context switch. Current process 23 added to queue, next process 24 taken off queue
+Time: 662  Process 35 has arrived, adding to ready queue.
+Time: 666 End of time quantum, context switch. Current process 24 added to queue, next process 13 taken off queue
+Time: 669  Process 36 has arrived, adding to ready queue.
+Time: 675 Ending process 13 Starting process 30
+Time: 685 End of time quantum, context switch. Current process 30 added to queue, next process 25 taken off queue
+Time: 692  Process 37 has arrived, adding to ready queue.
+Time: 695 End of time quantum, context switch. Current process 25 added to queue, next process 31 taken off queue
+Time: 705 End of time quantum, context switch. Current process 31 added to queue, next process 17 taken off queue
+Time: 715 Ending process 17 Starting process 26
+Time: 725 End of time quantum, context switch. Current process 26 added to queue, next process 32 taken off queue
+Time: 735 End of time quantum, context switch. Current process 32 added to queue, next process 27 taken off queue
+Time: 742  Process 38 has arrived, adding to ready queue.
+Time: 745 End of time quantum, context switch. Current process 27 added to queue, next process 33 taken off queue
+Time: 745  Process 39 has arrived, adding to ready queue.
+Time: 754 Ending process 33 Starting process 14
+Time: 764 Ending process 14 Starting process 18
+Time: 764  Process 40 has arrived, adding to ready queue.
+Time: 767 Ending process 18 Starting process 28
+Time: 775 Ending process 28 Starting process 19
+Time: 784 Ending process 19 Starting process 29
+Time: 789 Ending process 29 Starting process 34
+Time: 799 End of time quantum, context switch. Current process 34 added to queue, next process 23 taken off queue
+Time: 809 Ending process 23 Starting process 35
+Time: 810  Process 41 has arrived, adding to ready queue.
+Time: 819 End of time quantum, context switch. Current process 35 added to queue, next process 24 taken off queue
+Time: 825  Process 42 has arrived, adding to ready queue.
+Time: 829 End of time quantum, context switch. Current process 24 added to queue, next process 36 taken off queue
+Time: 839 Ending process 36 Starting process 30
+Time: 841  Process 43 has arrived, adding to ready queue.
+Time: 848 Ending process 30 Starting process 37
+Time: 858 End of time quantum, context switch. Current process 37 added to queue, next process 25 taken off queue
+Time: 860 Ending process 25 Starting process 31
+Time: 870 End of time quantum, context switch. Current process 31 added to queue, next process 26 taken off queue
+Time: 880 Ending process 26 Starting process 32
+Time: 881 Ending process 32 Starting process 38
+Time: 884  Process 44 has arrived, adding to ready queue.
+Time: 891 End of time quantum, context switch. Current process 38 added to queue, next process 27 taken off queue
+Time: 901 End of time quantum, context switch. Current process 27 added to queue, next process 39 taken off queue
+Time: 911 End of time quantum, context switch. Current process 39 added to queue, next process 40 taken off queue
+Time: 921 End of time quantum, context switch. Current process 40 added to queue, next process 34 taken off queue
+Time: 922  Process 45 has arrived, adding to ready queue.
+Time: 926 Ending process 34 Starting process 41
+Time: 928  Process 46 has arrived, adding to ready queue.
+Time: 936 End of time quantum, context switch. Current process 41 added to queue, next process 35 taken off queue
+Time: 944 Ending process 35 Starting process 42
+Time: 954 End of time quantum, context switch. Current process 42 added to queue, next process 24 taken off queue
+Time: 956 Ending process 24 Starting process 43
+Time: 963  Process 47 has arrived, adding to ready queue.
+Time: 965  Process 48 has arrived, adding to ready queue.
+Time: 966 End of time quantum, context switch. Current process 43 added to queue, next process 37 taken off queue
+Time: 969  Process 49 has arrived, adding to ready queue.
+Time: 976 End of time quantum, context switch. Current process 37 added to queue, next process 31 taken off queue
+Time: 977  Process 50 has arrived, adding to ready queue.
+Time: 986 End of time quantum, context switch. Current process 31 added to queue, next process 44 taken off queue
+Time: 996 End of time quantum, context switch. Current process 44 added to queue, next process 38 taken off queue
+Time: 1006 End of time quantum, context switch. Current process 38 added to queue, next process 27 taken off queue
+Time: 1008 Ending process 27 Starting process 39
+Time: 1018 End of time quantum, context switch. Current process 39 added to queue, next process 40 taken off queue
+Time: 1028 End of time quantum, context switch. Current process 40 added to queue, next process 45 taken off queue
+Time: 1038 End of time quantum, context switch. Current process 45 added to queue, next process 46 taken off queue
+Time: 1048 End of time quantum, context switch. Current process 46 added to queue, next process 41 taken off queue
+Time: 1058 End of time quantum, context switch. Current process 41 added to queue, next process 42 taken off queue
+Time: 1068 End of time quantum, context switch. Current process 42 added to queue, next process 47 taken off queue
+Time: 1078 End of time quantum, context switch. Current process 47 added to queue, next process 48 taken off queue
+Time: 1088 End of time quantum, context switch. Current process 48 added to queue, next process 43 taken off queue
+Time: 1097 Ending process 43 Starting process 49
+Time: 1107 End of time quantum, context switch. Current process 49 added to queue, next process 37 taken off queue
+Time: 1117 End of time quantum, context switch. Current process 37 added to queue, next process 50 taken off queue
+Time: 1120 Ending process 50 Starting process 31
+Time: 1122 Ending process 31 Starting process 44
+Time: 1132 End of time quantum, context switch. Current process 44 added to queue, next process 38 taken off queue
+Time: 1142 End of time quantum, context switch. Current process 38 added to queue, next process 39 taken off queue
+Time: 1152 End of time quantum, context switch. Current process 39 added to queue, next process 40 taken off queue
+Time: 1158 Ending process 40 Starting process 45
+Time: 1168 End of time quantum, context switch. Current process 45 added to queue, next process 46 taken off queue
+Time: 1178 End of time quantum, context switch. Current process 46 added to queue, next process 41 taken off queue
+Time: 1188 End of time quantum, context switch. Current process 41 added to queue, next process 42 taken off queue
+Time: 1192 Ending process 42 Starting process 47
+Time: 1202 End of time quantum, context switch. Current process 47 added to queue, next process 48 taken off queue
+Time: 1212 End of time quantum, context switch. Current process 48 added to queue, next process 49 taken off queue
+Time: 1222 End of time quantum, context switch. Current process 49 added to queue, next process 37 taken off queue
+Time: 1226 Ending process 37 Starting process 44
+Time: 1236 End of time quantum, context switch. Current process 44 added to queue, next process 38 taken off queue
+Time: 1246 End of time quantum, context switch. Current process 38 added to queue, next process 39 taken off queue
+Time: 1249 Ending process 39 Starting process 45
+Time: 1254 Ending process 45 Starting process 46
+Time: 1264 Ending process 46 Starting process 41
+Time: 1274 End of time quantum, context switch. Current process 41 added to queue, next process 47 taken off queue
+Time: 1284 End of time quantum, context switch. Current process 47 added to queue, next process 48 taken off queue
+Time: 1294 End of time quantum, context switch. Current process 48 added to queue, next process 49 taken off queue
+Time: 1297 Ending process 49 Starting process 44
+Time: 1301 Ending process 44 Starting process 38
+Time: 1303 Ending process 38 Starting process 41
+Time: 1313 Ending process 41 Starting process 47
+Time: 1323 End of time quantum, context switch. Current process 47 added to queue, next process 48 taken off queue
+Time: 1325 Ending process 48 Starting process 47
+Time: 1328 Ending process 47
+
+Round Robin Scheduling Simulation complete
+
