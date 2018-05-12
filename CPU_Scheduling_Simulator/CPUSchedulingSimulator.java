@@ -92,8 +92,7 @@ class CPUSchedulingSimulator {
 		int i = 0;
 
 		System.out.println();
-		System.out
-				.println("Beginning Shortest Remaining Time Next Preemptive Scheduling Simulation");
+		System.out.println("Beginning Shortest Remaining Time Next Preemptive Scheduling Simulation");
 		System.out.println();
 		out.println();
 		out.println("Beginning Shortest Remaining Time Next Preemptive Scheduling Simulation");
@@ -126,11 +125,9 @@ class CPUSchedulingSimulator {
 
 					if (i == processes.length) {
 						System.out.println();
-						System.out.println(
-								"Shortest Remaining Time Next Preemptive Scheduling Simulation complete");
+						System.out.println("Shortest Remaining Time Next Preemptive Scheduling Simulation complete");
 						out.println();
-						out.println(
-								"Shortest Remaining Time Next Preemptive Scheduling Simulation complete");
+						out.println("Shortest Remaining Time Next Preemptive Scheduling Simulation complete");
 					}
 				}
 			}
@@ -353,8 +350,7 @@ class CPUSchedulingSimulator {
 
 		if (currentlyRunning == null) {
 
-			System.out
-					.println("Time: " + time + "  Process " + arriving.processID + " has arrived.");
+			System.out.println("Time: " + time + "  Process " + arriving.processID + " has arrived.");
 			out.println("Time: " + time + "  Process " + arriving.processID + " has arrived.");
 
 			arriving.executionStartTime = time;
